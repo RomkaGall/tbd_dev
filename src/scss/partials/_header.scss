@@ -1,0 +1,87 @@
+.header {
+    padding: 13px 0;
+    color: #a4a4a4;
+
+    .wr {
+        max-width: 1750px;
+    }
+    
+    .header__content {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        color: #9277d6;
+        font-family: "Harmonia Sans Pro Cyr";
+        font-size: 41px;
+        font-weight: 700;
+        line-height: 75px;
+        text-transform: uppercase;
+        letter-spacing: 4.1px;
+    }
+
+    .header__links_wr {
+
+        .header__nav {
+            display: flex;
+        }
+
+        .header_link {
+            margin-right: 50px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .header__actions {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__signIn {
+        margin-right: 50px;
+    }
+
+    .header__basket {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__basketIndicator {
+        display: flex;
+        align-items: center;
+        width: 45px;
+        height: 44px;
+        margin-right: 14px;
+        background-color: #6ac8c8;
+        border-radius: 50%;
+        background-image: url(../img/cart.png);
+        background-size: 16px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .basket__counter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        margin-left: -10px;
+        background-color: #9277d6;
+        border-radius: 50%;
+        color: #ffffff;
+        font-family: "Harmonia Sans Pro Cyr",sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 65px;
+    }
+}

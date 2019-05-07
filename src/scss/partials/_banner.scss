@@ -1,0 +1,36 @@
+.banner {
+    height: 665px;
+    background: url(../img/banner.jpg) center no-repeat;
+    background-size: cover;
+    color: #fff;
+
+    .wr {
+        height: 100%;
+    }
+    
+
+    .banner__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .banner__title {
+        margin-bottom: 30px;
+        font-family: "Harmonia Sans Pro Cyr", sans-serif;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 65px;
+        text-align: center;
+    }
+
+    .banner__subtitle {
+        margin-bottom: 30px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 26px;
+        text-align: center;
+    }
+}
