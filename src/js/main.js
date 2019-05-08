@@ -8,6 +8,11 @@ $(document).ready(function () {
     infinite: true
   })
 
+  $('.menu_btn').click(function(){
+    $(this).toggleClass('open');
+    $('.header__menu').toggleClass('show')
+	});
+
   //wow
   $(function () {
     new WOW().init();
