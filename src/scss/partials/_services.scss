@@ -2,6 +2,10 @@
     padding: 100px 0;
     background-color: #f8f9fc;
     
+    @media (max-width: 767px) {
+        padding: 50px 0;    
+    }
+
     .services__title {
         margin-bottom: 25px;
         color: #4a4a56;
@@ -9,19 +13,40 @@
         font-size: 35px;
         font-weight: 700;
         letter-spacing: 1.75px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
+            font-size: 22px;
+            letter-spacing: 1.1px;
+        }
     }
 
     .services__describe {
         margin-bottom: 25px;
         font-weight: 300;
         line-height: 28px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 26.03px;
+        }
     }
 }
 
 .services__item {
     display: flex;
     justify-content: space-between;
-    margin-block-end: 100px;
+    margin-bottom: 100px;
+
+    @media (max-width: 1100px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 50px;
+    }
 
     &:last-child {
         margin-bottom: 0;
@@ -31,10 +56,22 @@
 .services__imgWr {
     width: 549px;
     height: 422px;
+
+    @media (max-width: 1100px) {
+        margin-bottom: 30px;    
+    }
+    @media (max-width: 600px) {
+        width: 100%;
+        height: auto;    
+    }
 }
 
 .services__info {
     max-width: 411px;
+
+    @media (max-width: 1100px) {
+        max-width: 549px;    
+    }
 }
 
 .services__specsItem {
@@ -71,5 +108,13 @@
     .img_wr {
         width: 24px;
         margin-right: 15px;
+
+        span {
+
+            @media (max-width: 767px) {
+                font-size: 14px;
+                line-height: 26.03px;
+            }
+        }
     }
 }

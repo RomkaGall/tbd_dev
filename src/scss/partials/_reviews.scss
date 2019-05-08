@@ -1,6 +1,10 @@
 .reviews {
     padding: 100px 0;
 
+    @media (max-width: 767px) {
+        padding: 50px 0;
+    }
+
     .block__title {
         margin-bottom: 15px;
     }
@@ -50,10 +54,18 @@
 .reviews__slider {
     max-width: 689px;
 
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+
     .slider__item {
         padding: 50px 100px;
         border-radius: 5px;
         border: 1px solid #dcdcdc;  
+
+        @media (max-width: 767px) {
+            padding: 40px 20px;
+        }
     }
 
     .reviews__text {
@@ -61,6 +73,10 @@
         text-align: center;
         font-weight: 300;
         line-height: 26px;
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
     }
 
     .reviews__name {
@@ -72,6 +88,10 @@
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 2.4px;
+
+        @media (max-width: 767px) {
+            font-size: 12px;
+        }
     }
 }
 

@@ -4,6 +4,13 @@
     background: url(../img/banner.jpg) center no-repeat;
     background-size: cover;
     color: #fff;
+    
+    @media (max-width: 767px) {
+        height: 410px;
+    }
+    @media (max-width: 425px) {
+        background-image: url(../img/banner_mobile.jpg);
+    }
 
     &::before {
         content: '';
@@ -36,6 +43,11 @@
         font-weight: 700;
         line-height: 65px;
         text-align: center;
+
+        @media (max-width: 767px) {
+            font-size: 30px;
+            line-height: normal;
+        }
     }
 
     .banner__subtitle {
@@ -45,5 +57,9 @@
         font-weight: 300;
         line-height: 26px;
         text-align: center;
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
     }
 }

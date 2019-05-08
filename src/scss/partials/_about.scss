@@ -1,6 +1,10 @@
 .about {
     padding: 90px 0;
 
+    @media (max-width: 767px) {
+        padding: 50px 0;
+    }
+
     .about__content {
         display: flex;
         flex-direction: column;
@@ -21,6 +25,10 @@
     .about__img {
         max-width: 682px;
         margin: -50px 0;
+
+        @media (max-width: 767px) {
+            margin: 0;
+        }
     }
     
 }
@@ -31,11 +39,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+
+    }
 }
 
 .about__specsItem {
     display: flex;
     align-items: center;
+
+    @media (max-width: 767px) {
+        margin-bottom: 30px;   
+    }
+
+    &:last-child {
+        @media (max-width: 767px) {
+            margin-bottom: 0;
+        }
+    }
 
     &:first-child {
 
@@ -61,5 +84,12 @@
 
     img {
         margin-right: 28px;
+    }
+
+    .about_name {
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
     }
 }
