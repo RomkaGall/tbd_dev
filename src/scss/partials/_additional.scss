@@ -1,4 +1,51 @@
 .additional {
     padding: 100px 0;
     background-color: #f8f9fc;
+
+    .block__title {
+        margin-bottom: 60px;
+    }
+}
+
+.additional__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 80px;
+    border-bottom: 1px solid  #e0e0e0;
+
+    .additional__item {
+        margin-bottom: 35px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .img_wr {
+        flex-shrink: 0;
+        width: 549px;
+    }
+
+    .additional__title {
+        margin-bottom: 20px;
+        color: #4a4a56;
+        font-family: "Harmonia Sans Pro Cyr";
+        font-size: 25px;
+        font-weight: 700;
+
+        .price {
+            color: #b9b9b9;
+        }
+    }
+
+    .additional__text {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+}
+
+.additional__info {
+    max-width: 408px;
 }
