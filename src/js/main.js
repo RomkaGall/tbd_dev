@@ -17,6 +17,7 @@ $(document).ready(function () {
   $(function () {
     new WOW({
       offset:       200,
+      mobile:       false,       
     }).init();
   })
 });
