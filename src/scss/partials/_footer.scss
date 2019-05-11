@@ -36,10 +36,15 @@
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 4.1px;
+        transition: 0.3s ease-in-out;
 
         @media (max-width: 767px) {
             margin-bottom: 30px;
             font-size: 30px;
+        }
+
+        &:hover {
+            color: #bdbdbd;
         }
     }
 
@@ -59,6 +64,13 @@
                 @media (max-width:767px) {
                     margin-bottom: 30px;
                     padding: 0 15px;
+                }
+
+                &:hover {
+
+                    a {
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -111,6 +123,13 @@
 
                 @media (max-width: 767px) {
                     margin-bottom: 20px;
+                }
+
+                &:hover {
+
+                    a {
+                        text-decoration: underline;
+                    }
                 }
 
                 &:last-child {

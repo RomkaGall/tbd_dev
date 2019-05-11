@@ -15,7 +15,10 @@ $(document).ready(function () {
 
   //wow
   $(function () {
-    new WOW().init();
+    new WOW({
+      offset:       200,
+      mobile:       false,       
+    }).init();
   })
 });
 
